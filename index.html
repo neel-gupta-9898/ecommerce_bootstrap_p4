@@ -32,14 +32,13 @@
                 <a class="nav-link" href="shop">Shop Now</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link dropdown-toggle" href="account" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="orders/">Your Order</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="logout">Log Out</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -60,24 +59,30 @@
                             </div>
                             <div class="modal-body" >
                             
-                                <div class="input-group"style="margin-bottom: 10px;">
-                                    <span class="input-group-text" id="basic-addon3">@</span>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" placeholder="Your Email">
-                                  </div>
-
-                                <div class="input-group">
-                                    <!-- <span class="input-group-text" id="basic-addon3">yourname@example.com</span> -->
-                                    <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" placeholder="Password">
-                                  </div>
-                                
-                                  <p class="fs-6" style="margin-bottom: 0;">Not Registered? <a href="signup.html" class="link">Sign Up</a></p>
-                                  <p class="fs-6">Forgot Password? <a href="signup.html" class="link">Reset Here</a></p>
-                                  
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Login</button>
-                            </div>
+                                <form action="profile.php" method="post">
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    
+                                    <p class="fs-6" style="margin-bottom: 0;">Not Registered? <a href="signup.html" class="link">Sign Up</a></p>
+                                    <p class="fs-6">Forgot Password? <a href="signup.html" class="link">Reset Here</a></p>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" id="login">Login</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
