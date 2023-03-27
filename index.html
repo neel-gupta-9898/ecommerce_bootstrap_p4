@@ -49,8 +49,8 @@
               <li class="nav-item">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> SignUp/Login </button>
-  
-  <!-- Modal -->
+    
+              <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -58,22 +58,21 @@
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body" >
                             
-                                <div class="input-group flex-nowrap">
-
-                                    <span class="input-group-text" id="addon-wrapping">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-
-                                </div>
-
-                                <div class="input-group">
-                                    <span class="input-group-text" id="basic-addon3">yourname@example.com</span>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                <div class="input-group"style="margin-bottom: 10px;">
+                                    <span class="input-group-text" id="basic-addon3">@</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" placeholder="Your Email">
                                   </div>
 
-                                <p class="fs-6">Not Registered? <a href="signup.html" class="link">Sign Up</a></p>
+                                <div class="input-group">
+                                    <!-- <span class="input-group-text" id="basic-addon3">yourname@example.com</span> -->
+                                    <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" placeholder="Password">
+                                  </div>
                                 
+                                  <p class="fs-6" style="margin-bottom: 0;">Not Registered? <a href="signup.html" class="link">Sign Up</a></p>
+                                  <p class="fs-6">Forgot Password? <a href="signup.html" class="link">Reset Here</a></p>
+                                  
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
