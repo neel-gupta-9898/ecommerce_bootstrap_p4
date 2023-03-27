@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="body">
+  <body>
 
 
     <header class="header sticky-top" id="header">
@@ -86,7 +86,12 @@
                 </div>
   
               </li>
-
+              
+              <li class="list-item">
+                <a href="cart/" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                </svg></a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -101,13 +106,13 @@
 
 
     <section class="slider">
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="1000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" >
           <div class="carousel-item active">
             <img src="img/Untitled.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
           </div>
@@ -131,8 +136,104 @@
 
 
 
-    <section class="features">
-      <h2 class="text-center">Features</h2>
+    <section class="shop">
+      <h2 class="text-center my-3">Featured Items</h2>
+
+      <div class="items d-flex flex-wrap">
+
+
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+
+      </div>
+
+
     </section>
 
 
