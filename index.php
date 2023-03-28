@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Neel Gupta">
     <meta name="description" content="This is a Ecommerce Bootstrap website template made by Neel Gupta">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Ecommerce</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="assets/ico/istockphoto-1266252971-612x612.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,13 +17,13 @@
 
 
     <div id="header">
-
+      <?php include('assets/comman-html/navbar.php'); ?>
     </div>
-
+      
 
 
     <section class="slider">
-      <div id="carouselExampleIndicators" class="carousel slide" data-interval="1000">
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="1000" style="width: 100%; height: 600px;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -32,13 +31,13 @@
         </div>
         <div class="carousel-inner" >
           <div class="carousel-item active">
-            <img src="img/Untitled.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
+            <img src="assets/img/Untitled.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/Untitled1.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
+            <img src="assets/img/Untitled1.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/Untitled2.jpg" width="100px" height="400px" class="d-block w-100" alt="...">
+            <img src="assets/img/Untitled2.jpg" width="100px" height="400px" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -61,7 +60,7 @@
 
 
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -72,7 +71,7 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -83,7 +82,7 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -94,7 +93,19 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <div class="card-body p-1">
+            <h3 class="card-title m-0">Item Title</h3>
+            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h4 class="card-text">$499</h4>
+            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="card m-auto my-3 p-3" style="width: 18rem;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -105,7 +116,7 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -116,7 +127,7 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -127,18 +138,7 @@
           </div>
         </div>
         <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
-          <div class="card-body p-1">
-            <h3 class="card-title m-0">Item Title</h3>
-            <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <h4 class="card-text">$499</h4>
-            <a href="cart/" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-            </svg></a>
-          </div>
-        </div>
-        <div class="card m-auto my-3 p-3" style="width: 18rem;">
-          <img src="img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
+          <img src="assets/img/Untitled.jpg" width="250px" height="250px" class="card-img-top mb-2" alt="..." style="border-radius: 7px;">
           <div class="card-body p-1">
             <h3 class="card-title m-0">Item Title</h3>
             <p class="card-text mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -157,82 +157,36 @@
     
     
     <div class="b-example-divider"></div>
-    
-    
-    <div class="container">
-      <footer class="pt-5 ">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
-    
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-    
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-3 border-top">
-          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+
+    <div id="footer"></div>
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/comman-html.js"></script>
 
-    <script>
     
-      $(function(){
-        $("#header").load("assets/comman-html/navbar.html");
-      });
-          </script>
 
   </body>
 </html>

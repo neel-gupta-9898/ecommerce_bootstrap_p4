@@ -1,3 +1,6 @@
+
+
+
 $(function(){
-    $("#header").load("assets/comman-html/navbar.html");
+    $("#footer").load("assets/comman-html/footer.html");
   });
