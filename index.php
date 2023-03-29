@@ -23,32 +23,29 @@
 
 
     <section class="slider">
-      <div id="carouselExampleIndicators" class="carousel slide" data-interval="1000" style="width: 100%; height: 600px;">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" >
-          <div class="carousel-item active">
-            <img src="assets/img/Untitled.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/Untitled1.jpg" width="100px" height="400px"  class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/Untitled2.jpg" width="100px" height="400px" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="assets/img/Untitled.jpg" width="100%" height="400px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="assets/img/Untitled1.jpg" width="100%" height="400px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/Untitled2.jpg" width="100%" height="400px" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     </section>
 
 
@@ -159,6 +156,7 @@
     <div class="b-example-divider"></div>
 
     <div id="footer"></div>
+    <?php include('assets/comman-html/footer.php');?>
 
 
 
@@ -186,7 +184,7 @@
     <script src="js/script.js"></script>
     <script src="js/comman-html.js"></script>
 
-    
+
 
   </body>
 </html>
