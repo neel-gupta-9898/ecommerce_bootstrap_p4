@@ -24,6 +24,10 @@
     #exampleModal{
       margin-top: 40px;
     }
+
+    .btn{
+      transition:0.4s ease-out;
+    }
   </style>
 
 </head>
